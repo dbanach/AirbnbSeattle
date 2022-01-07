@@ -2,7 +2,7 @@
 #### (Project still in development)
 
 
->#The Project.
+#>The Project.
 > This project shows the creation of a rent prediction model  
 > based on data from the famous [Kaggle Airbnb Seattle dataset](https://www.kaggle.com/airbnb/seattle).  
 >   

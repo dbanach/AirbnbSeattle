@@ -1,0 +1,44 @@
+service: lambda_serverless_test_service
+app: lambda_serverless_test_app
+
+custom:
+  pythonRequirements:
+    slim: true
+  efsAccessPoint: fsap-07542a89e4dfd5114
+  LocalMountPath: /mnt/access
+  subnetsId1: subnet-072a09b2bdbf31f95
+  securityGroup: sg-0368ae0cded2369b8
+  stages:
+    - main
+    - dev
+
+plugins:
+  - serverless-python-requirements
+#  - serverless-pseudo-parameters
+#  - serverless-stage-manager
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: python3.9
+  stage: dev
+  region: us-east-1
+
+
+
+
+functions:
+  get_data:
+    name: test-lambda
+    handler: get_data.handler
+    description: test_lambda_github
+    timeout: 600 # seconds
+    memorySize: 128 # mb
+#    package:
+#      patterns:
+#        - "!node_modules/**"
+#        - "!yarn.lock"
+#        - "!package-lock.json"
+#        - "!package.json"

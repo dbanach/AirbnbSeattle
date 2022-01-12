@@ -1,5 +1,5 @@
 service: test
-app: lambda_serverless_test_app
+app: airbnb_app
 
 custom:
   pythonRequirements:

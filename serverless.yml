@@ -1,4 +1,4 @@
-service: lambda_serverless_test_service
+service: test
 app: lambda_serverless_test_app
 
 custom:

@@ -1,0 +1,19 @@
+
+service: airbnbseattle
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.9
+  versionFunctions: false
+#  lambdaHashingVersion: 20201221
+  memorySize: 128
+  region: us-east-1
+
+
+
+functions:
+  hello:
+    handler: handler.hello
+    events:

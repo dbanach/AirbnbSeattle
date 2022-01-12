@@ -12,6 +12,9 @@ custom:
     - main
     - dev
 
+
+
+
 plugins:
   - serverless-python-requirements
 #  - serverless-pseudo-parameters

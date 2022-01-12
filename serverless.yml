@@ -1,6 +1,7 @@
 service: test
 app: airbnb_app
 
+
 custom:
   pythonRequirements:
     slim: true

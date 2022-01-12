@@ -1,5 +1,4 @@
 # Rent Prediction Model
-#### (Project still in development)
 
 
 #The Project.
